@@ -1,0 +1,24 @@
+7.Write a program to get the size of various data types using different constant defined in limits.h header file. 
+----------------------------------------------------------------------------------------------------------------
+Algorithm:
+1.start
+2.define the different types datatype and its conversions
+3. In main fiunction, Declare the all datatypes
+4.find the size of all data types by using functions
+
+
+
+#include<stdio.h>
+#define int char  //define the integer into char
+
+#define float int   //define the  float into integer
+
+#define char float   //define the char into integer
+
+int main(){
+int a;                            //Declares the datatypes
+char b;
+float c;
+printf("%ld %ld %ld", sizeof(a),sizeof(b),sizeof(c));  //print the size of all datatypes
+return 0;
+}

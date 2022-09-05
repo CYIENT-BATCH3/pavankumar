@@ -1,0 +1,72 @@
+
+6. Write a program to input 5 integer values, 3 char values and 4 float values. 
+-------------------------------------------------------------------------------
+(a).Print all the input values. 
+------------------------------
+
+Algorithm:
+1.start
+2.declare the 5 integers, 4 flioat values, 3 charecters
+3.read the all ingteger values, float values, charecter values by user define function
+4.assign the all integer value to accordance variables
+5.sum the all integer values , float values , charecter values
+6.print the result of converted float value to intger sum
+
+#include<stdio.h>
+int main(){ 
+int num1; //declare the 5  integer varibless
+int num2;
+int num3;
+int num4;
+int num5;
+
+float f_num1; //declare the 4 float variables
+float f_num2;
+float f_num3;
+float f_num4;
+
+char ch1;  // declare the 3 charecters
+char ch2;
+char ch3; 
+
+float fsum ; //declare the float variable
+int sum,isum;
+float val;
+
+printf("enetr the 5 integar values:\n"); //Enter the 5 integer value
+scanf("%d%d%d%d%d",&num1,&num2,&num3,&num4,&num5); //Read the 5 integer values
+
+printf("enter the float 4 values\n");              //Enter the 4 float values
+scanf("%f%f%f%f",&f_num1,&f_num2,&f_num3,&f_num4);  //Read the float value
+
+printf("enter the  character\n"); //Enter the 3 charecter values
+scanf("%s",&ch1);                  // Read the 3 charecter values
+printf("\n");
+scanf("%s",&ch2);
+printf("\n");
+scanf("%s",&ch3);
+
+
+(b).Print the float sum and integer sum of the float values. 
+------------------------------------------------------------
+
+
+printf("integar value\n = %d%d%d%d%d",num1,num2,num3,num4,num5);  //print the integer values
+printf("flaot values\n = %f%f%f%f",f_num1,f_num2,f_num3,f_num4); //print the float  values
+printf("characters\n  = %c%c%c",ch1,ch2,ch3);                     //print the chaecter values
+fsum = f_num1+f_num2+f_num3+f_num4;                          //sum the all float values
+isum = f_num1+f_num2+f_num3+f_num4;                           //sum the all float values
+sum = num1+num2+num3+num4+num5;                                //sum the all integer values
+printf("integar sum\n = %d",isum);
+printf("flaot sum\n = %f",fsum);
+
+
+(c).Print the sum of the integer values and divide it by the float sum calculated in question b. 
+-----------------------------------------------------------------------------------------------
+
+
+val = (float)sum/fsum;            // sum of all float
+printf("final val\n = %f", val); //print the float value
+}
+
+
