@@ -1,24 +1,30 @@
+/*Algorith
+1.start
+2.declare structure along with members
+3.declare the structure variables and assign the values
+4. 
+*/
 #include <stdio.h>
-typedef struct{
+typedef struct{  //declare structure along with members
     int a;
     float b;
 }student;
-student add(student);
+student add(student); //function prototype
 int main(){
-    student s1,s2;
+    student s1,s2;  //declare the structure variables and assign the values
     s1.a=10;
     s1.b=22.5;
-    printf("s1.a=%d",s1.a);
+    printf("s1.a=%d",s1.a);  //print the values
     printf("    s1.b=%f",s1.b);
 
-    s2=add(s1);
+    s2=add(s1);    //print the values
     printf("\ns1.a=%d",s2.a);
     printf("    s1.b=%f",s2.b);
 }
 
-student add(student s){
+student add(student s){ //definition of function
     s.a=20;
     s.b=20.6;
-    return s;
+    return s; //return the values to the structure
 }
  
