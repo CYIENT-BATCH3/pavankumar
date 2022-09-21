@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int num;
+	char mysentence[100];
+	setbuf(stdout,NULL);
+	FILE *fp=fopen("C:\\Users\\pp69919\\Desktop\\Document.txt","w");
+	if(fp == NULL){
+		printf("File is not found");
+		exit(1);
+	}
+	scanf("%[^\n]s",mysentence);
+    num=1099;
+    printf("Google world: ");
+    fprintf(fp,"%s",mysentence);
+}
