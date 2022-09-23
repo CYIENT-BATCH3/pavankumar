@@ -1,0 +1,9 @@
+#include <iostream> //including header file
+//using namespace std;//include standerd librery
+int main(){
+	setbuf(stdout,NULL);
+	int a; //declare a variable
+	std::cout<<"Enter the a: ";  //Enter the value of a
+	std::cin>>a;   //Read the value of a
+	std::cout<<"a value is: "<<a; //simple result of the problem
+}

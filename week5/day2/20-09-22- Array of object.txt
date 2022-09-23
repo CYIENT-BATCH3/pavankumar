@@ -1,0 +1,28 @@
+/*
+ Algorithm:
+ 1.start
+  2.declare the class
+  3.give private number
+  4.print the variable of class
+  5.print the variable of class by display function 
+  6.assign and private the values 10 times by for loop
+ */
+#include<iostream>
+using namespace std;
+class Myclass{ //declare the class 
+	int num;  //give private number
+public:
+	void value(int n1){
+		num=n1; //assign the public number to private
+	}
+	void display(){
+		cout<<"\nIncremented number: "<<num; //print the variable of class by display function 
+	}
+};
+
+int main(){
+	Myclass obj1[10];  //create the object
+	for(int i=0;i<=10;i++) obj1[i].value(i);  //assign the values 10 times by for loop
+	for(int i=0;i<=10;i++) obj1[i].display(); //print the values 10 times by for loop
+	return 0;
+}

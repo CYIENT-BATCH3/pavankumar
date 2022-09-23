@@ -1,0 +1,22 @@
+/*
+ Algorithm:
+ 1.start
+ 2.declare a variables as a character
+ 3.Enter and Read the character
+ 4.print the result of vowel or consolent by if condition
+ */
+#include <iostream>  //including header file
+using namespace std; //include standard library
+int main(){
+	setbuf(stdout,NULL);
+	char ch; //declare a variables as character
+	cout<<"Enter the character :"<<endl;  //Enter the charactor value
+	cin>>ch;   //Read the charactor value
+	if(ch=='a'|| ch=='A'||ch=='e'||ch=='E'||ch=='i'||ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U'){ //check the condition for character is vowel or consolent
+		cout<<ch<< "Entered character is vowel"<<endl; //print the vowel result
+	}
+	else{
+		cout<<ch<<"Entered character is consolent"<<endl; //print the consolent
+	}
+
+}

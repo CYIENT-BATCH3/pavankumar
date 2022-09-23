@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class Student{  //declare the class as student
+public:
+	int age=45;  //declare class variable
+	float fees=40000; //declare class variable
+public:
+	/*void input(){
+		cout<<"Enter the age: ";
+		cin>>age;
+		cout<<"enter the fees:";
+		cin>>fees;
+	}*/
+	void display(){
+		cout<<"\nMy age is:"<<age;
+		cout<<"\n Fees:"<<fees;
+	}
+};
+
+int main(){
+	Student S1;
+	S1.age=45;
+	S1.fees=40000;
+	cout<<"\nS1.age:"<<S1.age;
+	cout<<"\nS1.fees:"<<S1.fees;
+	//S1.input();
+	S1.display();
+	return 0;
+}

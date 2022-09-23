@@ -1,0 +1,21 @@
+/*
+Algorithm:
+1.start
+2.declare a variable
+3.Enter and Read the value of  a and b
+4.print the result by checking condition
+*/
+#include <iostream> //including header file
+using namespace std;//include standerd librery
+int main(){
+	setbuf(stdout,NULL);
+	int a,b; //declare a variable
+	cout<<"Enter two integher value "<<endl;  //Enter the value of  a and b
+	cin>>a>>b;   //Read the value of a and b
+    cout<<"a="<<a<< " b=" <<b<<endl;
+    if(a>b){
+    	cout<<a<<" is bigger";
+    }
+    else
+    	cout<<b<<" is bigger";
+}

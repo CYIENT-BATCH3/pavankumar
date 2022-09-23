@@ -1,0 +1,38 @@
+/*
+ Algorithm:
+ 1.start
+  2.Declare class along with variables
+  3.Parameterized constructor is created in public
+  4.called  constructor,assign the string and integer value to variables
+  5.create copy constructor and object name ,value
+  6.object with display function return
+  7.print the variable of class by display function
+ */
+#include<iostream>
+using namespace std;
+class Person{ //Declare class along with variables
+public:
+	string name;
+	int age;
+	Person(string Person_name,int Person_age){ //default constructor is created
+		cout<<"constructor name:"<<endl; //called parameterized constructor
+		name=Person_name;        //assign the string value to variable
+		cout<<"constructor age:"<<endl; //called parameterized constructor
+		age=Person_age; //assign value to a integer
+	}
+	Person(const Person& obj){ //create copy constructor
+		cout<<"\n Copy constructor is called"<<endl;
+		name=obj.name; //object name
+		age=obj.age; //object value
+	}
+	void display(){ //call  function as display output
+		cout<<"Name of current object: "<<name<<endl;
+		cout<<"Age of current object: "<<age<<endl;
+	}
+};
+int main(){ //main function with object is created
+	Person obj("Pavankumar",24); //passing values to display
+	obj.display(); //object with display function return
+	Person obj1(obj); //copy the one object value to another object value
+	obj1.display();
+}

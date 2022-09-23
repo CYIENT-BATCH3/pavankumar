@@ -1,0 +1,37 @@
+/*
+Algorithm:
+1.start
+2.create the parent or base class and child or derived class
+3.declaration of variables to classes
+4.object of employee function
+5.display function is shows the result by return
+ */
+#include <iostream>
+using namespace std;
+class Company{ // parent or base class
+public:
+	char Com_name[10]; //declaration of variables to class
+	char Com_location[10];
+public:
+	int Com_no_emps;
+private:
+	char Com_products;
+};
+class Employee:public Company{ //child or derived class
+public:
+	void display(){ //display function is shows the result by return
+		//get  and print values
+		cout<<"Enter the company name:"<<endl;
+		cin>>Com_name;
+		cout<< "I am Employee of " <<Com_name<<endl;
+		cout<<"\n Enter the company location:"<<endl;
+		cin>>Com_location;
+		cout<< "My company location is " <<Com_location<<endl;
+	}
+};
+
+int main(){
+	Employee E1; //object of employee function
+	E1.display();
+	return 0;
+}

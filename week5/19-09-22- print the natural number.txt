@@ -1,0 +1,19 @@
+/*
+ Algorithm:
+ 1.start
+ 2.declare a variables
+ 3.Enter and Read the 2-digit number
+ 4.print the natural number result by do while loop
+ */
+#include <iostream>  //including header file
+using namespace std; //include standerd librery
+int main(){
+	setbuf(stdout,NULL);
+	int num,i=1; //declare a variables as num
+	cout<<"Enter the number:"<<endl;  //Enter the 4-digit number
+	cin>>num;   //Read the  4-digit number
+	do{
+		cout<<i<<"\t"; //print the value
+		i++; //increment count
+	}while(i<=num); //check the condition for natural number
+}

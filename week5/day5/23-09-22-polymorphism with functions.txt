@@ -1,0 +1,29 @@
+/*
+ Algorithm:
+ 1.start
+ 2.define the class name with Area
+ 3.define the function name as function
+ 4.formula for area of circle,triangle,rectangle
+ 5.create the object and function overloading single,two,three parameter
+ */
+#include <iostream>
+using namespace std;
+class Area{  //defining the class
+public:
+	void function(int radius){ //defining the function
+		cout<<"The area of circle:"<<3.14*radius*radius<<endl; //formula for area of circle
+	}
+	void function(int len,int wi){   //defining the function
+		cout<<"The area of rectangle:"<<len*wi<<endl;  //formula for area of rectangle
+	}
+	void function(int height,double base){   //defining the function
+		cout<<"the area of triangle :"<<(height*base)/2<<endl;  //formula for area of triangle
+	}
+};
+int main(){
+	Area obj1; //create the object
+	obj1.function(5); //function overloading single parameter
+	obj1.function(5,12); //function overloading two parameters
+	obj1.function(5,4.8); //function overloading three parameters
+	return 0;
+}

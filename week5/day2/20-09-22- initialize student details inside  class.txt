@@ -1,0 +1,31 @@
+/*
+Algorithm:
+1.start
+2.declare the class as student and student variables
+3.enter and read the age,fees
+4.create the object and print age and fee
+*/
+#include<iostream>
+using namespace std;
+class Student{  //declare the class as student
+	int age;  //declare class variable
+	float fees; //declare class variable
+public:
+	void input(){
+		cout<<"Enter the age: "; //enter the age
+		cin>>age;  //Read the age
+		cout<<"enter the fees:"; //enter the fee
+		cin>>fees; //read the fee
+	}
+	void display(){
+		cout<<"My age is:"<<age;//print age and fee
+		cout<<"\n Fees:"<<fees;
+	}
+};
+
+int main(){
+	Student S1; //create the object
+	S1.input(); //object of s1
+	S1.display(); //object of display
+	return 0;
+}

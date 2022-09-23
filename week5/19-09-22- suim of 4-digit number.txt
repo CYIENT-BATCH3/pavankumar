@@ -1,0 +1,22 @@
+/*
+ Algorithm:
+ 1.start
+ 2.declare a variables
+ 3.Enter and Read the 4-digit number
+ 4.extract the number mode ,add and divide
+ 5.print the sum result
+ */
+#include <iostream>  //including header file
+using namespace std; //include standerd librery
+int main(){
+	setbuf(stdout,NULL);
+	int num,rem,sum=0; //declare a variables as num,rem,sum
+	cout<<"Enter 4 digit  integer value:"<<endl;  //Enter the 4-digit number
+	cin>>num;   //Read the  4-digit number
+    while(num){
+    	rem=num%10; //mode with 10 and get reminder
+    	sum=sum+rem;  //add the sum with reminder
+    	num=num/10; //extract number divide num
+    }
+    cout<<"the sum of digits:"<<sum<<endl; //print the sum result
+}

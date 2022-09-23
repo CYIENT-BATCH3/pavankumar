@@ -1,0 +1,35 @@
+/*
+ Algorithm:
+ 1.start
+  2.dDeclare class along with variables
+  3.default constructor is created in public
+  4.called default constructor,assign the string and integer value to variables
+  5.create the destructor to allocates the constror values
+  5.object with display function return
+  6.print the variable of class by display function
+ */
+#include<iostream>
+using namespace std;
+class Person{ //Declare class along with variables
+	string name;
+	int age;
+public:
+	Person(){ //default constructor is created
+		cout<<"Default constructor is called "<<endl; //called default constructor
+		name="student"; //assign the string value to variable
+		age=24; //assign value to a integer
+	}
+	void display(){ //call  function as display output
+		cout<<"Name of current object: "<<name<<endl;
+		cout<<"Age of current object: "<<age<<endl;
+	}
+	~Person(){ //default destructor is created
+			cout<<"Default constructor is called "<<endl; //called default destructor
+			name="student"; //assign the string value to variable
+			age=24; //assign value to a integer
+		}
+};
+int main(){ //main function with object is created
+	Person obj;
+	obj.display(); //object with display function return
+}

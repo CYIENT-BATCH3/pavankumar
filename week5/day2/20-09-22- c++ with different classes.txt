@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+class MyClass{
+	int z; //default it takes as private
+public:  //public  access specifier
+	int x; //public attribute
+private: //private access specifier
+	int y; //private attribute
+};
+
+int main(){
+	MyClass myObj;
+	//myObj.z=30; //initialize the private variable is not allowed here
+	myObj.x=25; //initialize the public variable is allowed here
+	//myObj.y=50; //initialize the private variable is not allowed here
+	cout<< myObj.x;
+	return 0;
+}
